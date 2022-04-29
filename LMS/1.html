@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>aaaa</title>
+<meta name="author" content="Group One">
+
+<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="./css/font-awesome.css" rel="stylesheet">
+
+<link href="./css/main.css" rel="stylesheet">
+</head>
+
+<body>
+         <div class='splash-img'>
+    <div class="container login">
+    <h1 class="hide">Login</h1>
+
+    <div class="row">
+
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto">
+    <h3 class="text-center form-head">Login</h3>
+
+            <div class="card login"><small class='alert alert-danger alert-dismissible'>Invalid password
+                <span class='close' data-dismiss='alert'>&times;</span></small>                
+            <form action="user.php" method="post" id="staff-login">
+                
+                <input type="hidden" name="login-type" value="staff">
+    
+                <input type="hidden" name="table" value="employee">
+    
+                <input type="hidden" name="page" value="dashboard.php">
+                    
+                <label class="text-black" for="staff_user">Staff Username</label class="text-black"><br>
+				
+                <input type="text" name="staff" value="john1234" maxlength="50" class="input-text" id="username"><br>
+                       
+                <label class="text-black" for="password">Password</label class="text-black"><br>
+                <input type="password" value="john1234" name="password" maxlength="50" class="input-text" id="password">
+ 
+                <button name="login" class="btn btn-yellow" type="submit">Login</button>
+				<label>(For supervisor: Username:supervisor Password:12345678)</label>
+				<label>(For supervisor: Username:admin Password:admin)</label>
+                <br>
+                <small class='mr-2'>No account? <a href='register.php' class='text-sm'>Register now</a></small>
+                <small class='ml-2'>
+                    <a href="recover.php" class='text-sm'>Forgot Password?</a>
+                </small>
+            </form>
+            
+        </div></div><script src="js/jquery.js"></script>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>   
+</body>
+</html>
